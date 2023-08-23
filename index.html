@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            gap: 1rem;
+        }
+        .contanier{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 350px;
+            background-color: #fff;
+            flex-direction: column;
+            /* padding: 50px 0; */
+            transition: 1s ease-in;
+            gap: 1rem;
+            
+        }
+        .cricle{
+            position: relative;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: conic-gradient(#00c6fb 3.6deg, #ededed 0deg);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            
+
+        }
+        .cricle::before{
+            content:'';
+            position: absolute;
+            background-color: aliceblue;
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            transition: 1s ease-in;
+        }
+        .value{
+            position: relative;
+            font-size: 40px;
+            font-weight: 600px;
+
+        }
+
+    </style>
+
+    <div class="contanier">
+        <div class="cricle">
+            <span class="value">0%</span>
+        </div>
+
+        <span class="tekst">HTML & CSS</span>
+    </div>
+    <div class="contanier">
+        <div class="cricle">
+            <span class="value">0%</span>
+        </div>
+
+        <span class="tekst">HTML & CSS</span>
+    </div>
+    <div class="contanier">
+        <div class="cricle">
+            <span class="value">0%</span>
+        </div>
+
+        <span class="tekst">HTML & CSS</span>
+    </div>
+    <div class="contanier">
+        <div class="cricle">
+            <span class="value">0%</span>
+        </div>
+
+        <span class="tekst">HTML & CSS</span>
+    </div>
+    <div class="contanier">
+        <div class="cricle">
+            <span class="value">0%</span>
+        </div>
+
+        <span class="tekst">HTML & CSS</span>
+    </div>
+    <div class="contanier">
+        <div class="cricle">
+            <span class="value">0%</span>
+        </div>
+
+        <span class="tekst">HTML & CSS</span>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
